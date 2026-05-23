@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Before You vs After You ❤️</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#060816;
+color:white;
+overflow-x:hidden;
+min-height:100vh;
+padding:25px 15px;
+position:relative;
+}
+
+/* stars */
+
+.stars{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+overflow:hidden;
+z-index:-1;
+}
+
+.star{
+position:absolute;
+background:white;
+border-radius:50%;
+opacity:0.7;
+animation:twinkle linear infinite;
+}
+
+@keyframes twinkle{
+0%,100%{
+opacity:0.2;
+transform:scale(1);
+}
+50%{
+opacity:1;
+transform:scale(1.7);
+}
+}
+
+/* floating hearts */
+
+.heart{
+position:fixed;
+bottom:-20px;
+font-size:18px;
+animation:rise linear forwards;
+pointer-events:none;
+z-index:1;
+}
+
+@keyframes rise{
+0%{
+transform:translateY(0) scale(1);
+opacity:0.8;
+}
+100%{
+transform:translateY(-110vh) scale(1.8);
+opacity:0;
+}
+}
+
+/* container */
+
+.container{
+max-width:900px;
+margin:auto;
+position:relative;
+z-index:2;
+}
+
+/* hero */
+
+.hero{
+padding:60px 25px;
+text-align:center;
+border-radius:35px;
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:0 10px 40px rgba(0,0,0,0.45);
+margin-bottom:35px;
+}
+
+.day{
+letter-spacing:5px;
+font-size:0.85rem;
+opacity:0.7;
+margin-bottom:15px;
+}
+
+h1{
+font-size:clamp(2.8rem,8vw,4.8rem);
+line-height:1.2;
+margin-bottom:20px;
+
+background:linear-gradient(to right,#ffb6c1,#ffd6e7,#ffffff);
+
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+}
+
+.subtitle{
+line-height:2.1;
+opacity:0.93;
+max-width:720px;
+margin:auto;
+font-size:1rem;
+}
+
+/* sections */
+
+.section{
+margin-top:30px;
+padding:32px;
+border-radius:30px;
+background:rgba(255,255,255,0.05);
+border:1px solid rgba(255,255,255,0.08);
+transition:0.4s;
+}
+
+.section:hover{
+transform:translateY(-5px);
+background:rgba(255,255,255,0.08);
+}
+
+.section-title{
+font-size:1.45rem;
+margin-bottom:22px;
+color:#ffd6e7;
+}
+
+.line{
+margin-bottom:18px;
+line-height:2;
+opacity:0.94;
+font-size:0.98rem;
+}
+
+/* button */
+
+.reveal{
+text-align:center;
+margin-top:40px;
+}
+
+button{
+padding:15px 35px;
+border:none;
+border-radius:40px;
+background:linear-gradient(135deg,#ff758c,#ff7eb3);
+color:white;
+font-size:1rem;
+font-weight:600;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 8px 25px rgba(255,118,136,0.35);
+}
+
+button:hover{
+transform:scale(1.05);
+}
+
+/* final */
+
+.final-message{
+margin-top:35px;
+padding:34px;
+border-radius:30px;
+background:rgba(255,255,255,0.05);
+line-height:2.2;
+font-size:1rem;
+opacity:0;
+transform:translateY(20px);
+transition:1s;
+display:none;
+}
+
+/* footer */
+
+.footer{
+margin-top:40px;
+text-align:center;
+opacity:0.72;
+line-height:1.9;
+font-size:0.92rem;
+}
+
+/* mobile */
+
+@media(max-width:600px){
+
+.hero,
+.section,
+.final-message{
+padding:24px 18px;
+}
+
+.subtitle,
+.line,
+.final-message{
+font-size:0.93rem;
+line-height:2;
+}
+
+button{
+width:100%;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="stars" id="stars"></div>
+
+<div class="container">
+
+<!-- HERO -->
+
+<div class="hero">
+
+<div class="day">
+DAY 6 / 10
+</div>
+
+<h1>
+Before You<br>
+vs After You ❤️
+</h1>
+
+<p class="subtitle">
+You didn't change my life loudly.
+
+You changed it quietly.
+
+Slowly.
+
+Softly.
+
+And somehow...
+that became the most powerful thing anyone has ever done to me.
+</p>
+
+</div>
+
+<!-- BEFORE -->
+
+<div class="section">
+
+<div class="section-title">
+🌑 Before You
+</div>
+
+<div class="line">
+Nights felt longer.
+</div>
+
+<div class="line">
+Songs were just songs.
+</div>
+
+<div class="line">
+Birthdays felt normal.
+</div>
+
+<div class="line">
+Notifications didn't matter.
+</div>
+
+<div class="line">
+I kept most things to myself.
+</div>
+
+<div class="line">
+The future felt distant and emotionally empty sometimes.
+</div>
+
+<div class="line">
+I never thought someone's “goodnight” could calm my heart.
+</div>
+
+</div>
+
+<!-- AFTER -->
+
+<div class="section">
+
+<div class="section-title">
+🌤 After You
+</div>
+
+<div class="line">
+Now one notification from you changes my whole mood.
+</div>
+
+<div class="line">
+Songs suddenly sound like memories.
+</div>
+
+<div class="line">
+Random places remind me of you.
+</div>
+
+<div class="line">
+Your voice became my favorite comfort.
+</div>
+
+<div class="line">
+The future feels softer because somehow you're inside every version of it.
+</div>
+
+<div class="line">
+Even difficult days feel survivable because I know you exist.
+</div>
+
+<div class="line">
+And somehow...
+“home” stopped being a place and became a person.
+</div>
+
+</div>
+
+<!-- HEALED -->
+
+<div class="section">
+
+<div class="section-title">
+🫀 Things You Healed Without Realizing
+</div>
+
+<div class="line">
+The fear of opening up emotionally.
+</div>
+
+<div class="line">
+The feeling that nobody would truly stay.
+</div>
+
+<div class="line">
+The habit of hiding everything inside.
+</div>
+
+<div class="line">
+The feeling of being emotionally misunderstood.
+</div>
+
+<div class="line">
+The fear that love would eventually disappear.
+</div>
+
+<div class="line">
+You didn't heal these things with advice.
+
+You healed them with your presence.
+</div>
+
+</div>
+
+<!-- BUTTON -->
+
+<div class="reveal">
+
+<button onclick="showMessage()">
+One Last Truth ❤️
+</button>
+
+</div>
+
+<!-- FINAL MESSAGE -->
+
+<div class="final-message" id="finalMessage">
+
+You know what hurts a little?
+
+The fact that you probably don't even realize how deeply you affected me emotionally.
+
+<br><br>
+
+You didn't save me dramatically.
+
+There was no movie moment.
+
+No huge speech.
+
+No magical fix.
+
+<br><br>
+
+You just stayed.
+
+You cared.
+
+You listened.
+
+You loved me in small consistent ways.
+
+And somehow...
+
+that quietly changed everything inside me.
+
+<br><br>
+
+Now my day feels incomplete without you in it.
+
+Now my heart naturally searches for you whenever something happens.
+
+Good or bad.
+
+<br><br>
+
+And honestly baby...
+
+that's terrifying sometimes.
+
+Because I don't think you understand how attached my soul became to your existence.
+
+<br><br>
+
+You became comfort.
+
+You became peace.
+
+You became the first person I want beside me during happiness and pain both.
+
+<br><br>
+
+And if someday the whole world asks me:
+
+“What changed you the most?”
+
+<br><br>
+
+I think my answer will simply be:
+
+“Her.”
+
+❤️
+
+</div>
+
+<div class="footer">
+
+for GK 🤍
+
+“you stayed... and somehow that healed me.”
+
+</div>
+
+</div>
+
+<script>
+
+/* stars */
+
+const stars=document.getElementById("stars");
+
+for(let i=0;i<170;i++){
+
+const star=document.createElement("div");
+
+star.classList.add("star");
+
+const size=Math.random()*3;
+
+star.style.width=size+"px";
+star.style.height=size+"px";
+
+star.style.left=Math.random()*100+"vw";
+star.style.top=Math.random()*100+"vh";
+
+star.style.animationDuration=(Math.random()*4+2)+"s";
+
+stars.appendChild(star);
+
+}
+
+/* hearts */
+
+function createHeart(){
+
+const heart=document.createElement("div");
+
+heart.classList.add("heart");
+
+heart.innerHTML="❤";
+
+heart.style.left=Math.random()*100+"vw";
+
+heart.style.animationDuration=(Math.random()*3+4)+"s";
+
+document.body.appendChild(heart);
+
+setTimeout(()=>{
+heart.remove();
+},7000);
+
+}
+
+setInterval(createHeart,450);
+
+/* reveal */
+
+function showMessage(){
+
+const msg=document.getElementById("finalMessage");
+
+msg.style.display="block";
+
+requestAnimationFrame(()=>{
+
+msg.style.opacity="1";
+msg.style.transform="translateY(0px)";
+
+window.scrollTo({
+top:msg.offsetTop - 20,
+behavior:"smooth"
+});
+
+});
+
+}
+
+</script>
+
+</body>
+</html>
